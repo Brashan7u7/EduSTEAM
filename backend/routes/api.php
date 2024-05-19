@@ -1,14 +1,12 @@
 <?php
 
-use App\Http\Controllers\profesorController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-e('auth:sanctum');
+use App\Http\Controllers\usuariosController;
 
-Route::controller(profesorController::class)->group(function(){
-    Route::post('profesor', 'saveProfesor');
-    Route::get('profesores', 'getProfesores');
-});
+Route::post('register',[UsuariosController::class,'register']);
+Route::post('login',[UsuariosController::class,'login']);
+
 
 
 

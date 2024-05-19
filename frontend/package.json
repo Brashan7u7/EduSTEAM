@@ -11,12 +11,15 @@
   "dependencies": {
     "bcrypt": "^5.1.1",
     "bcryptjs": "^2.4.3",
+    "bootstrap": "^5.3.3",
     "https": "^1.0.0",
-    "mongoose": "6.11.1",
-    "next": "13.5.4",
+    "mongoose": "^6.12.8",
+    "next": "^14.2.3",
     "next-auth": "^4.24.4",
     "react": "^18",
+    "react-bootstrap": "^2.10.2",
     "react-dom": "^18",
+    "react-router-dom": "^6.23.1",
     "swr": "^2.2.4"
   },
   "devDependencies": {
