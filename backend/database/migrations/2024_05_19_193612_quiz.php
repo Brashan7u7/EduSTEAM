@@ -11,14 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('Tema', function (Blueprint $table){
-            $table->increments('idTema');
-            $table->string('titulo',30);
-            $table->string('descripcion',60);
-            $table->unsignedInteger('idCurso');
+        Schema::create('Quiz',function (Blueprint $table){
+            $table->increments('idQuiz');
+            $table->string('titulo', 30);
+           
+            $table->unsignedInteger('idTema');
             $table->timestamps();
 
-            
+            $table->foreign('idTema')->references('idTema')->on('Tema')->onDelete('cascade');
+       
         });
     }
 
@@ -28,6 +29,5 @@ return new class extends Migration
     public function down(): void
     {
         //
-        
     }
 };

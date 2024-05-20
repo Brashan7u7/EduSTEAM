@@ -15,4 +15,7 @@ class tema extends Model
     public function curso(){
         return $this->hasOne(Curso:: class);
     }
+    public function quiz(){
+        return $this->belongsTo(quiz:: class);
+    }
 }
