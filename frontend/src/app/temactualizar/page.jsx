@@ -36,7 +36,7 @@ export default function Tema() {
       <Navbar2></Navbar2>
       <div className={styles.header_content}>
         <div className={styles.card1}>
-          <h4>Crear Temario</h4>
+          <h4>Actualizar Temario</h4>
           <form className="row g-3">
             <div className="col-12" className={styles.cuestion}>
               <label htmlFor="inputTitle" className="form-label">Nombre del tema</label>
@@ -56,9 +56,10 @@ export default function Tema() {
           </form>
           <div className={styles.button}>
           <button className={styles.boton}>
-            <a href="/subtema">Crear</a>
+            <a href="/tema">Actualizar</a>
           </button>
           </div>
+          
         </div>
       </div>
     </div>

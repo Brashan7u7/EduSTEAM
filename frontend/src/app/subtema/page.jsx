@@ -56,9 +56,30 @@ export default function Tema() {
           </form>
           <div className={styles.button}>
           <button className={styles.boton}>
-            <a href="/subtema">Crear</a>
+            <a href="/tema">Ver Subtemas</a>
           </button>
           </div>
+        </div>
+
+<div className={styles.colum}>
+        <div className={styles.card2}>
+          <h4>Crear Subtema</h4>
+          <form className="row g-3">
+            <div className="col-12" className={styles.cuestion}>
+              <label htmlFor="inputTitle" className="form-label">Nombre del subtema</label>
+              <input type="text" value={titulo} onChange={ (e) => settitulo(e.target.value)} required className={`form-control ${styles.input}`} name="inputTitle" id="inputTitle" placeholder="Ingresa el nombre del subtema"/>
+            </div>
+            <div className="col-12" className={styles.cuestion}>
+              <label htmlFor="inputDescription" className="form-label">Información del subtema</label>
+              <input type="text" value={descripcion} onChange={ (e) => setdescripcion(e.target.value)} required className={`form-control ${styles.input}`} name= "inputDescription" id="inputDescription" placeholder="Ingresa la infromación del subtema"/>
+            </div>
+          </form>
+          <div className={styles.button}>
+          <button className={styles.boton}>
+            <a href="/tema">Guardar</a>
+          </button>
+          </div>
+        </div>
         </div>
       </div>
     </div>
