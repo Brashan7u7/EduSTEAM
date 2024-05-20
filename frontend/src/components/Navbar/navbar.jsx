@@ -7,10 +7,10 @@ import { useSession } from "next-auth/react";
 
 const links = [
   { id: 1, title: "Inicio", url: "/" },
-  { id: 2, title: "Nosotros", url: "/" },
+  { id: 2, title: "Nosotros", url: "/nosotros" },
   { id: 3, title: "Temas", url: "/" },
-  { id: 4, title: "Login", url: "/login" },
-  { id: 5, title: "Register", url: "/register" },
+ /* { id: 4, title: "Login", url: "/login" },
+  { id: 5, title: "Register", url: "/register" },*/
 ];
 
 const Navbar = () => {
@@ -28,7 +28,7 @@ const Navbar = () => {
           </Link>
         ))}
         <button className={styles.boton}>
-          <a href="/dashboard">Iniciar Sesion</a>
+          <a href="/login">Iniciar Sesion</a>
         </button>
       </div>
     </div>
