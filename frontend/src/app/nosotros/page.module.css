@@ -1,0 +1,57 @@
+.header {
+  background-image: linear-gradient(rgba(248, 203, 151, 0.35),
+      rgba(248, 203, 151, 0.35),
+      rgba(248, 203, 151, 0.35)),
+    url(/fondo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 150px auto 0;
+  display: flex;
+  min-height: 95vh;
+  align-items: center;
+  
+}
+
+.header_content {
+  background-color: #ffff;
+  margin: 0px auto 0;
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos hijos se envuelvan */
+  justify-content: center;
+}
+
+  .card1, .card2, .card3{
+    margin: 30px auto 0;
+    margin-left: 3em;
+    height: 450px;
+    width: 380px;
+    border: 3px solid rgba(248, 203, 151, 1);
+  }
+
+  .card1 h2, .card2 h2, .card3 h2{
+    text-align: center;
+    padding: 20px  20px;
+  }
+
+  .card1 p, .card2 p, .card3 p{
+    text-align: center;
+    padding: 20px  20px;
+    font-size: small;
+    font-weight: 500;
+  }
+  .card1 img, .card2 img, .card3 img{
+  margin-left: 90px;
+  }
+
+  @media (max-width: 768px) {
+    .header_content {
+      flex-direction: column; /* Cambia la dirección del flujo a columna */
+      align-items: center; /* Centra los elementos hijos en la columna */
+    }
+  
+    .card1, .card2, .card3 {
+      margin-left: 0; /* Elimina el margen izquierdo */
+      margin-top: 20px; /* Agrega un margen superior entre las tarjetas */
+    }
+  }
