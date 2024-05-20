@@ -46,7 +46,10 @@ export default function Tema() {
               <label for="inputCategory" className="form-label">Categoria</label>
               <select id="inputState" className="form-select" >
                 <option selected="">Ingenieria</option>
-                <option>...</option>
+                <option selected="">Artes</option>
+                <option selected="">Ciencias</option>
+                <option selected="">Tecnologia</option>
+                <option selected="">Matematicas</option>
               </select>
             </div>
             <div className="col-12" className={styles.cuestion}>

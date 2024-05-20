@@ -1,0 +1,101 @@
+.container {
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.header {
+  background-color: #dfe4ea;
+  padding: 20px;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.nav {
+  margin-top: 10px;
+}
+
+.nav button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #f1c40f;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main {
+  padding: 20px;
+}
+
+.activities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.activityCard {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  max-width: 600px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  background-size: cover;
+}
+
+.science {
+  background-image: url('/science-icon.png');
+}
+
+.technology {
+  background-image: url('/technology-icon.png');
+}
+
+.engineering {
+  background-image: url('/engineering-icon.png');
+}
+
+.art {
+  background-image: url('/art-icon.png');
+}
+
+.mathematics {
+  background-image: url('/mathematics-icon.png');
+}
+
+.content {
+  text-align: left;
+  flex-grow: 1;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #dfe4ea;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
