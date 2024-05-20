@@ -11,14 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('Tema', function (Blueprint $table){
-            $table->increments('idTema');
-            $table->string('titulo',30);
-            $table->string('descripcion',60);
-            $table->unsignedInteger('idCurso');
+        Schema::create('Respuesta',function (Blueprint $table){
+            $table->increments('idRespuesta');
+            $table->string('pregunta', 30);
+            $table->boolean('is_active') -> default(false);
+           
+            $table->unsignedInteger('idPreguntas');
             $table->timestamps();
 
-            $table->foreign('idCurso')->references('idCurso')->on('curso')->onDelete('cascade');
+            $table->foreign('idPreguntas')->references('idPreguntas')->on('Preguntas')->onDelete('cascade');
        
         });
     }
@@ -29,6 +30,5 @@ return new class extends Migration
     public function down(): void
     {
         //
-        
     }
 };

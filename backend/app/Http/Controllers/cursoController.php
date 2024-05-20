@@ -29,7 +29,7 @@ class cursoController extends Controller
         $curso->delete();
         return response()->json(['message' => 'Curso eliminado'], 200);
     }
-    public function updateCurso($id, Request $request){
+    public function updateCurso(Request $request, $id){
         $curso = curso::find($id);
         if(!$curso){
             return response()->json(['message' => 'Curso no encontrado'], 404);

@@ -12,10 +12,10 @@ class tema extends Model
     'descripcion',
     ];
 
-    public function curso(){
-        return $this->hasOne(Curso:: class);
-    }
     public function quiz(){
         return $this->belongsTo(quiz:: class);
+    }
+    public function curso(){
+        return $this->belongsTo(Curso:: class);
     }
 }

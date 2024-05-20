@@ -8,10 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class curso extends Model
 {
     use HasFactory;
-    protected $fillable =['titulo','descripcion'];
+    protected $fillable = [
+        'titulo',
+        'descripcion',
+    ];
 
     public function tema(){
-        return $this->belongsTo(Tema::class);
+        return $this->hasOne(tema::class);
     }
-    
+
 }

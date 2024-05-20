@@ -11,15 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('Curso', function (Blueprint $table){
-            $table->increments('idCurso');
-            $table->string('titulo', 50);
-            $table->string('descripcion', 50);
-            
+        Schema::create('Preguntas',function (Blueprint $table){
+            $table->increments('idPreguntas');
+            $table->string('pregunta', 30);
+           
+            $table->unsignedInteger('idQuiz');
             $table->timestamps();
 
+            $table->foreign('idQuiz')->references('idQuiz')->on('Quiz')->onDelete('cascade');
        
-            
         });
     }
 
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        
+        //
     }
 };
