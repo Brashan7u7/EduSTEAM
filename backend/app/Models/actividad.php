@@ -8,5 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class actividad extends Model
 {
     use HasFactory;
-    protected $fillable=['nombreActividad','descriActividad','archivo','idSubtema'];
+    protected $fillable=[
+    'nombreActividad',
+    'descriActividad',
+    'archivo'];
+
+    public function subtema(){
+        return $this->belongsTo(Subtema:: class);
+    }
 }

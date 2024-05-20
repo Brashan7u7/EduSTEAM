@@ -11,7 +11,16 @@ return new class extends Migration
      */
     public function up(): void
     {
-        //
+        Schema::create('Curso', function (Blueprint $table){
+            $table->increments('idCurso');
+            $table->string('titulo', 50);
+            $table->string('descripcion', 50);
+            
+            $table->timestamps();
+
+       
+            
+        });
     }
 
     /**
@@ -19,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        
     }
 };
