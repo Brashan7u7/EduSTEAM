@@ -1,0 +1,48 @@
+.container {
+    font-family: "Outfit", sans-serif;
+    position: fixed;
+    height: 150px;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #CDD5FF;
+    z-index: 20; /* Asegura que el navbar esté por encima del footer */
+  }
+  
+  .links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    font-size: 20px;
+    padding: 80px;
+    font-weight: 545;
+  }
+  
+  .links a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+  }
+  
+  .boton {
+    width: 190px;
+    padding: 15px;
+    background-color: #E58A56;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+  
+  .boton a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .boton:active {
+    font-size: 25px;
+  }
+  

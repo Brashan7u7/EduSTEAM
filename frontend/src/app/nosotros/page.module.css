@@ -15,7 +15,7 @@
 
 .header_content {
   background-color: #ffff;
-  margin: 0px auto 0;
+  margin: 0px auto 10px;
   display: flex;
   flex-wrap: wrap; /* Permite que los elementos hijos se envuelvan */
   justify-content: center;

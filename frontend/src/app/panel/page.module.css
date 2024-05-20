@@ -1,0 +1,92 @@
+.header_content {
+  background-color: #ffff;
+  margin: 10px auto 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.title {
+  margin: 170px auto 0px;
+  text-align: center;
+}
+
+.card1,.card2,.card3 {
+  margin: 30px auto 0;
+
+  height: 209px;
+  width: 630px;
+  border: 3px solid rgba(248, 203, 151, 1);
+  align-items: center;
+  display: flex;
+}
+
+.card1 h2,.card2 h2,.card3 h2 {
+  text-align: center;
+  padding: 20px 20px;
+}
+
+.card1 p,.card2 p,.card3 p {
+  text-align: center;
+  padding: 20px 20px;
+  font-size: small;
+  font-weight: 500;
+}
+
+.card1 img,.card2 img,.card3 img {
+  margin-left: 50px;
+}
+
+@media (max-width: 768px) {
+  .header_content {
+    flex-direction: column;
+    /* Cambia la dirección del flujo a columna */
+    align-items: center;
+    /* Centra los elementos hijos en la columna */
+  }
+
+  .card1,.card2,.card3 {
+    margin-left: 0;
+    /* Elimina el margen izquierdo */
+    margin-top: 20px;
+    /* Agrega un margen superior entre las tarjetas */
+  }
+}
+
+
+.boton {
+  width: 170px;
+  height: 50px;
+  padding: 15px;
+  background-color: #E58A56;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  align-items: center;
+}
+
+.boton2 {
+  width: 170px;
+  height: 50px;
+  padding: 15px;
+  background-color: #fff;
+  border: solid #E58A56;
+  border-radius: 8px;
+  font-size: 18px;
+  margin-left: .5em;
+  box-shadow: inset;
+}
+
+.boton a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.boton2 a {
+  color: #E58A56;
+  text-decoration: none;
+}
+
+.boton:active {
+  font-size: 25px;
+}
