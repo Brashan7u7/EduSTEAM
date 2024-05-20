@@ -15,8 +15,11 @@ return new class extends Migration
             $table->increments('idCurso');
             $table->string('titulo',30);
             $table->string('descripcion',60);
-            
+            $table->unsignedInteger('idSteam');
             $table->timestamps();
+            $table->foreign('idSteam')->references('idSteam')->on('steam')->onDelete('cascade');
+            
+       
         });
     }
 

@@ -13,9 +13,11 @@ return new class extends Migration
     {
         Schema::create('Steam', function (Blueprint $table){
             $table->increments('idSteam');
-            $table->string('titulo', 50);
+            $table->string('titulo',50);
+            
             $table->timestamps();
-
+            
+       
         });
     }
 
@@ -24,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-       
+        //
     }
 };

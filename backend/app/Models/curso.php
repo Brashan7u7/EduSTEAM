@@ -16,5 +16,8 @@ class curso extends Model
     public function tema(){
         return $this->hasOne(tema::class);
     }
+    public function steam(){
+        return $this->belongsTo(Steam::class);
+    }
 
 }
